@@ -1,0 +1,96 @@
+.about {
+    padding: 160px 0 60px 0;
+    background-color: var(--co-white);
+}
+
+.about_subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--co-grey);
+}
+
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_title {
+    /* max-width: 550px; */
+    width: 1200px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--co-green);
+    position: relative;
+}
+
+.about_title::before{
+    content: "Что вообще тут происходит?";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--co-grey);
+}
+
+.about_desc {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--co-grey);
+    max-width: 670;
+}
+
+.about__cards {
+    margin-top: 80px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+
+}
+
+.about__cards .card:nth-child(2) {
+    margin-top: 160px;
+}
+
+@media (max-width:1250px) {
+    .about_subtitle{
+        max-width: 600px;
+        text-align: center;
+    }
+    .about_title{
+        width: 420px;
+    }
+    .about_content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .about__cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .about__cards .card:nth-child(2) {
+        margin: 0;
+    }
+
+}
+@media (max-width:576px){
+    .about_content{
+        padding: 0 15px;
+    }
+    .about_title{
+        font-size: 35px;
+    }
+    .about_desc{
+        font-size: 16px;
+    }
+        .about_title{
+        width: 320px;
+    }
+}

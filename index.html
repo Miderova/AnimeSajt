@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miderova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/favicon_miderova.png" type="image/png">
+</head>
+
+<body>
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper" aria-label="Logo">
+                <svg class="logo">
+                    <use href="assets/sprites.svg#logo-icon"></use>
+                </svg>
+
+                <nav class="header_nav" aria-label="navigation">
+                    <ul class="header_nav-list" aria-label="navigation list">
+                        <li class="header_nav_item">
+                            <a href="#" class="header_nav_link">Почему я?</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#" class="header_nav_link">Решение</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#" class="header_nav_link">Создатель</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#" class="header_nav_link">Прайс</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header_actions">
+                    <button type="button" class="btn btn--signin">Вход</button>
+                    <button type="button" class="btn">Начать суету</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Я могу <br> Быть рядом.</h1>
+                    <p class="hero__desc">Твои раны — не проклятие, а часть нашего пути. И я выбираю идти этим путём
+                        дальше, веря, что мы сможем залечить их вместе</p>
+                    <button type="button" class="btn">Найти свой путь</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" aria-label="about_section">
+            <div class="container">
+                <!-- <h3 class="about_subtitle">Что вообще тут происходит?</h3> -->
+                <div class="about_content">
+                    <h2 class="about_title">Аниме это не зло</h2>
+                    <p class="about_desc">Взаимопонимание — это тонкое искусство слышать не только слова, но и скрытые
+                        за ними чувства и смыслы. Это мост, построенный из искреннего уважения, эмпатии и готовности
+                        принять чужую точку зрения, не теряя своей.</p>
+                </div>
+
+                <div class="about__cards">
+                    <figure class="card" aria-label="first card">
+                        <h4 class="card__title">Расскажи о себе</h4>
+                        <p class="card_desc" aria-label="first card desc">Пройди короткий опрос о том, как ты строишь
+                            отношения, что вызывает напряжение и что хочешь улучшить. Это поможет создать твой
+                            персональный дневник для гармоничного общения.</p>
+                        <img src="assets/webp/2.webp" alt="card_img" class="card__img">
+                    </figure>
+
+                    <figure class="card" aria-label="second card">
+                        <h4 class="card__title card__title--second card__title--right">Понимание и забота</h4>
+                        <p class="card_desc" aria-label="second card desc">Пишите, рисуйте, анализируйте, понимайте.
+                            Miderova поможет улучшить взаимопонимание в ваших отношениях</p>
+                        <img src="assets/webp/3.webp" alt="card_img" class="card__img">
+                    </figure>
+
+                    <figure class="card" aria-label="third card">
+                        <h4 class="card__title card__title--third">Мяу!!</h4>
+                        <p class="card_desc" aria-label="third card desc">Осознайте и управляйте стрессом. Не ждите —
+                            начните с Miderova сегодня! Кто знает, что может быть завтра...</p>
+                        <img src="assets/webp/4.webp" alt="card_img" class="card__img">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="success">
+            <div class="container">
+                <div class="success_wrapper">
+                    <div class="success_content">
+                        <h3 class="success__title">Давайте посмотрим на создателя и оценим</h3>
+                        <p class="success__description">Посмотрим какой она про геймер в игры</p>
+                        <button class="btn">Погнали смотреть</button>
+                    </div>
+
+                    <div class="success_content-video">
+                        <img src="assets/webp/black.png"  class="success__cover" alt="video cover img">
+                        <svg class="success_play-icon" aria-label="play icon">
+                            <use href="assets/sprites.svg#play-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
