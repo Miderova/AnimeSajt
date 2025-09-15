@@ -24,16 +24,16 @@
                 <nav class="header_nav" aria-label="navigation">
                     <ul class="header_nav-list" aria-label="navigation list">
                         <li class="header_nav_item">
-                            <a href="#" class="header_nav_link">Почему я?</a>
+                            <a href="#aboutID" class="header_nav_link">Почему я?</a>
                         </li>
                         <li class="header_nav_item">
-                            <a href="#" class="header_nav_link">Решение</a>
+                            <a href="#successID" class="header_nav_link">Решение</a>
                         </li>
                         <li class="header_nav_item">
-                            <a href="#" class="header_nav_link">Создатель</a>
+                            <a href="#productID" class="header_nav_link">Создатель</a>
                         </li>
                         <li class="header_nav_item">
-                            <a href="#" class="header_nav_link">Прайс</a>
+                            <a href="#pricingID" class="header_nav_link">Прайс</a>
                         </li>
                     </ul>
                 </nav>
@@ -46,19 +46,55 @@
         </div>
     </header>
 
+    
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="menu-toggler-id" aria-label="open-close menu-toggler-id">
+            <svg class="mobile-navigation__burgger">
+                <use href="assets/sprites.svg#burder"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" name="toggler" id="menu-toggler-id" class="mobile-navigation__togler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile-navigation">
+            <ul class="mobile-navigation__list" aria-label="mobile-navigation list">
+                <li class="mobile-navigation_item">
+                    <a href="#aboutID" class="mobile-navigation_link">Почему я?</a>
+                </li>
+                <li class="mobile-navigation_item">
+                    <a href="#successID" class="mobile-navigation_link">Решение</a>
+                </li>
+                <li class="mobile-navigation_item">
+                    <a href="#productID" class="header_nav_link">Создатель</a>
+                </li>
+                <li class="mobile-navigation_item">
+                    <a href="#pricingID" class="mobile-navigation_link">Прайс</a>
+                </li>
+            </ul>
+            <label for="menu-toggler-id" class="mobile-navigation_close" aria-label="open-close menu-toggler-id">
+                <svg class="mobile-navigation__cross">
+                    <use href="assets/sprites.svg#cross"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+
     <main>
-        <section class="hero">
+        <section class="hero" id="heroID">
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">Я могу <br> Быть рядом.</h1>
                     <p class="hero__desc">Твои раны — не проклятие, а часть нашего пути. И я выбираю идти этим путём
                         дальше, веря, что мы сможем залечить их вместе</p>
-                    <button type="button" class="btn">Найти свой путь</button>
+                    <button type="button" class="btn">
+                        <a href="https://t.me/qqjok" target="_blank">Найти свой путь</a>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <section class="about" aria-label="about_section">
+        <section class="about" aria-label="about_section" id="aboutID">
             <div class="container">
                 <!-- <h3 class="about_subtitle">Что вообще тут происходит?</h3> -->
                 <div class="about_content">
@@ -94,17 +130,19 @@
             </div>
         </section>
 
-        <section class="success">
+        <section class="success" id="successID">
             <div class="container">
                 <div class="success_wrapper">
                     <div class="success_content">
                         <h3 class="success__title">Давайте посмотрим на создателя и оценим</h3>
                         <p class="success__description">Посмотрим какой она про геймер в игры</p>
-                        <button class="btn">Погнали смотреть</button>
+                        <button class="btn">
+                            <a href="https://vk.com/video-227812508_456239021" target="_blank">Погнали смотреть</a>
+                        </button>
                     </div>
 
                     <div class="success_content-video">
-                        <img src="assets/webp/black.png"  class="success__cover" alt="video cover img">
+                        <img src="assets/webp/black.png" class="success__cover" alt="video cover img">
                         <svg class="success_play-icon" aria-label="play icon">
                             <use href="assets/sprites.svg#play-icon"></use>
                         </svg>
@@ -113,7 +151,7 @@
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="productID">
             <div class="container">
                 <div class="product_wrapper">
                     <div class="product_preview">
@@ -122,8 +160,11 @@
                     <div class="product_content">
                         <h5 class="product_info">Наш продукт</h5>
                         <h4 class="product_title">Ты нам будешь плакать <br>А мы тебе поможем </h4>
-                        <p class="product_desc">Позвольте Miderova провести вас через персонализированный дневник, который поможет справиться с напряжением и обрести гармонию.</p>
-                        <button class="btn">Начать хайп</button>
+                        <p class="product_desc">Позвольте Miderova провести вас через персонализированный дневник,
+                            который поможет справиться с напряжением и обрести гармонию.</p>
+                        <button class="btn">
+                            <a href="https://t.me/qqjok" target="_blank">Начать хайп</a>
+                        </button>
                     </div>
 
                     <figure class="person-card">
@@ -145,6 +186,29 @@
         </section>
     </main>
 
+    <footer class="pricing" aria-label="pricing section" id="pricingID">
+        <div class="container">
+            <div class="pricing__content">
+                <h2 class="pricing__title">Miderova</h2>
+                <nav class="pricing_nav" aria-label="pricing">
+                    <ul class="pricing_nav-list" aria-label="pricing list">
+                        <li class="pricing_nav_item">
+                            <a href="#aboutID" class="pricing_nav_link">Почему я?</a>
+                        </li>
+                        <li class="pricing_nav_item">
+                            <a href="#successID" class="pricing_nav_link">Решение</a>
+                        </li>
+                        <li class="pricing_nav_item">
+                            <a href="#productID" class="pricing_nav_link">Создатель</a>
+                        </li>
+                        <li class="pricing_nav_item">
+                            <a href="#pricingID" class="pricing_nav_link">Прайс</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

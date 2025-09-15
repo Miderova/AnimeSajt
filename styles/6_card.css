@@ -59,7 +59,7 @@
     font-size: 22px;
 }
 .card__title::before {
-    left: -90px;
+    left: -65px;
 
 }
 .card_desc {
